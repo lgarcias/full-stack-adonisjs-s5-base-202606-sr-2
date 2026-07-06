@@ -27,6 +27,7 @@ cd backend
 npm install
 cp .env.example .env
 node ace generate:key      # rellena APP_KEY en .env
+mkdir -p tmp                # SQLite necesita este directorio antes de migrar
 npm run migration:run      # crea las tablas users + auth_access_tokens
 npm run dev                # servidor con HMR
 ```
